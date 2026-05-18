@@ -5,6 +5,12 @@
       "email": "demo@demo",
       "password": "demo",
       "id": "1"
+    },
+    {
+      "name": "fama",
+      "email": "fama@mail.ru",
+      "password": "fama01",
+      "id": "7igo11c6cmpb4pddk"
     }
   ],
   "accounts": [
@@ -22,6 +28,51 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "ff",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11fnlmpb9miqn"
+    },
+    {
+      "name": "y",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11frqmpb9retw"
+    },
+    {
+      "name": "t",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11ftempb9rlcy"
+    },
+    {
+      "name": "g",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11g87mpba9jsx"
+    },
+    {
+      "name": "gg",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11glampbagjtp"
+    },
+    {
+      "name": "vyv",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11gwvmpbb1gz3"
+    },
+    {
+      "name": "т",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11h2wmpbb5dwz"
+    },
+    {
+      "name": "T",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11h8gmpbb6yaw"
+    },
+    {
+      "name": "Т",
+      "user_id": "7igo11c6cmpb4pddk",
+      "id": "7igo11i1gmpbc9c2n"
     }
   ],
   "transactions": [
