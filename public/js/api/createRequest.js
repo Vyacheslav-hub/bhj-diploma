@@ -10,13 +10,15 @@ const createRequest = (options = {}) => {
         callback,
     } = options;
 
+    const safeData = data || {};
+
     const xhr = new XMLHttpRequest();
 
     xhr.responseType = 'json';
 
     if (method.toUpperCase() === 'GET') {
         if (data) {
-            const dataArr = Object.entries(data);
+            const dataArr = Object.entries(safeData);
             const dataString = dataArr.map(item => {
                 return `${encodeURIComponent(item[0])}=${encodeURIComponent(item[1])}`
             }).join('&');
@@ -31,7 +33,7 @@ const createRequest = (options = {}) => {
 
     }else {
         const formData = new FormData();
-            for (const [key, value] of Object.entries(data)) {
+            for (const [key, value] of Object.entries(safeData)) {
                 formData.append(key, value)
             }
 
