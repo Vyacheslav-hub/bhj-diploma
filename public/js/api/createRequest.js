@@ -43,14 +43,20 @@ const createRequest = (options = {}) => {
 
     xhr.onload = () => {
         if (xhr.status >= 200 && xhr.status < 300) {
-            callback(null, xhr.response);
+            if (typeof callback === 'function') {
+                callback(null, xhr.response);
+            }
         } else {
-          callback(new Error(`Ошибка: ${xhr.statusText}`));
+            if (typeof callback === 'function') {
+                callback(new Error(`Ошибка: ${xhr.statusText}`));
+            }
         }
     };
 
     xhr.onerror = () => {
-        callback(new Error('Ошибка сети'));
+        if (typeof callback === 'function') {
+            callback(new Error('Ошибка сети'));
+        }
     };
 };
 
