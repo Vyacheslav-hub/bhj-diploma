@@ -52,7 +52,7 @@ router.put("/", upload.none(), function(request, response) {
                 sum: +sum,
                 account_id,
                 user_id: currentUserId,
-                created_at: new Date().toISOString()
+                created_at: new Date().toISOString().slice(0, 19).replace('T', ' ')
             }).write();
             response.json({success: true});// отправление ответа с успешностью
         } else {
