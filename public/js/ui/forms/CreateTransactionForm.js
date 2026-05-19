@@ -42,6 +42,7 @@ class CreateTransactionForm extends AsyncForm {
       if (response && response.success) {
         this.element.reset();
 
+        App.showPage('transactions', { account_id: data.account_id });
         App.update();
 
         if (this.element.id === 'new-income-form') {
