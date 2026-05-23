@@ -104,7 +104,7 @@ class AccountsWidget {
       maximumFractionDigits: 2
     });
 
-    return `<li class="account" data-id="${id}"><a href="#"><span>${name}</span><span>${sumString}</span></a></li>`
+    return `<li class="account" data-id="${id}"><a href="#"><span>${name}</span> / <span>${sumString} ₽</span></a></li>`
   }
 
   /**
